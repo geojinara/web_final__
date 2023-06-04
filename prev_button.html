@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>prev,next animation slide</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none
+    }
+
+    #wrap {
+        width: 300px;
+        margin: 20px auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slide {
+        width: 900px;
+          }
+
+    .slide>li {
+        width: 300px;
+        float: left;
+        
+  
+    }
+
+    .slide>li>img {
+        width: 100%;
+        
+    }
+
+    
+
+    #wrap>span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        
+        font-size: 38px;
+        color: #fff;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .prev {
+        left: 0;
+        border-radius: 0 10px 10px 0;
+        padding: 0 8px 0 2px;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 10px 0 0 10px;
+        padding: 0 2px 0 8px;
+    }
+    #wrap > span:hover { background:rgba(255,255,255,0.8); 
+    	color:#000;}
+    </style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <ul class="slide">
+            <li>
+                <img src="img1.jpg" alt="slide image">
+            </li>
+            <li>
+                <img src="img2.png" alt="slide image" >
+            </li>
+            <li>
+                <img src="img3.png" alt="slide image" >
+            </li>
+        </ul>
+       
+        <span class="prev">&lt;</span>
+        <span class="next">&gt;</span>
+    </div>
+    <script>
+    $('.prev').click(function(){
+    	$('.slide li:last').prependTo('.slide');
+    	$('.slide').css('margin-left',-300);
+    	$('.slide').stop().animate({marginLeft:0}, 800)
+    });
+    $('.next').click(function(){
+    	$('.slide').stop().animate({marginLeft:-300},800, function(){
+    		$('.slide li:first').appendTo('.slide');
+    		$('.slide').css({marginLeft:0})
+    	})
+    });
+    </script>
+</body>
+
+</html>

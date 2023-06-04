@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+	<title>기말페이지2</title>
+
+
+<style>
+
+	@font-face {
+    font-family: 'ONE-Mobile-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ONE-Mobile-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+		 *{box-sizing: border-box; }
+
+       html 
+		
+		body{margin: 0; padding: 0; font-family: ONE-Mobile-Regular;}
+		
+		h1,h2{margin: auto;letter-spacing: -0.06em;}
+
+		
+		section{margin: 0 auto;}
+
+    
+    .bg-box{width: 1440px;margin: 0 autos;}
+    
+    .bg-blue{background: blue;width: 900px;font-size:0.6rem;line-height: 20px;margin-bottom: 100px;border-radius:20px;}
+	
+	.text-box{width: 900px; margin: auto;font-size: 5rem;text-align: center;padding-top: 50px;color: white;padding-bottom: 50px;}
+
+
+
+
+	.blue-box{size: 100%;}
+	
+	.h2-box-1{text-align: justify;padding: 50px;line-height: 20px;size: 70%;}
+
+	.h2-box-2{text-align: justify;padding: 50px;line-height: 20px;size: 30%;}
+
+
+
+
+	.pink-box{width:700px;height: 300px;
+		;padding-top: 60px;font-size: 1.3rem;margin-top: 40px; color:blue;border-radius: 30px;margin: auto;background: white;font-family: 'ONE-Mobile-Title';}
+
+
+ 
+
+		.bg-box-text1{font-family: 'ONE-Mobile-Title';color: blue;padding-bottom: 30px;}
+
+		.particle{width: 400px;position: absolute;top:10px;left: 200px;
+
+		}
+
+	.date{font-size: 2.3rem;font-family: 'ONE-Mobile-Title';}
+
+	.date-1{font-size: 1rem;margin-top: 20px;font-family: ONE-Mobile-Regular;}
+
+	
+	.text-last{width: 500px;margin: auto;padding-top: 30px;font-size: 0.8rem;padding-bottom: 50px;line-height: 40px;color: yellow;text-decoration : underline;}
+
+	.img-heart{position: absolute; opacity: 40%;top: 10px;z-index: 1;background-blend-mode: multiply;left: 100px;}
+
+	.img-heart-2{position: absolute; opacity: 30%;top: 500px;z-index: 1;background-blend-mode: multiply;left: 1000px;width: 40px;}
+
+
+   
+    .box-2{width:800px;text-align: center;
+          margin: auto;color: blue;margin-top: 50px;}
+
+    .news-h2box{text-align: left;
+    font-size: 0.5rem;
+    letter-spacing: -0.05em;
+    display: flex;
+    size: 100%;
+   margin: 50px;
+padding-bottom: 70px;}
+
+    .h2-box-01{size: 60%;padding-right: 30px;}
+    .h2-box-02{size: 40%;}
+
+
+
+   .law-1{display:flex; width: 800px;margin: auto;size: 100%;font-size: 1rem;line-height: 25px;font-family: 'ONE-Mobile-Regular';border-radius: 60%;}
+
+   .law-2{display:flex; width: 800px;margin: auto;size: 100%;font-size: 1rem;line-height: 25px;font-family: 'ONE-Mobile-Regular';border-radius: 60%;}
+
+
+
+   .law-1-1 {display: inline-block; size: 33%;
+			font-size: 1em;float: center;
+			width: 33%; text-align:left;
+			margin: 1em; padding: 25px;}
+  
+   .law-h2{padding-bottom: 20px;font-family: 'ONE-Mobile-Title';}
+
+
+
+.hhover{padding-top: 50px;display: flex;padding-left: 60px;}
+
+.hoverbox1{padding-bottom: 20px;
+color: white;}
+
+
+.hover-i1 {width: 400px;
+    display: none; position: absolute; right: 700px;top: 1250px;}
+
+    .hover-t1{background: blue;width: 100px;margin: auto;height: 50px;line-height: 50px;border-radius: 50px;}
+
+.hover-t1:hover+.hover-i1 {
+    display: block;}
+
+.hover-i2 {width: 400px;
+    display: none; position: absolute; right: 650px;top: 1250px;}
+
+        .hover-t2{background: blue;width: 280px;margin: auto;height: 50px;line-height: 50px;border-radius: 50px;}
+
+         .hover-t3{background: blue;width: 100px;margin: auto;height: 50px;line-height: 50px;border-radius: 50px;}
+
+          .hover-t4{background: blue;width: 100px;margin: auto;height: 50px;line-height: 50px;border-radius: 50px;}
+
+.hover-t2:hover+.hover-i2 {
+    display: block;}
+
+.hover-i3 {width: 400px;
+    display: none; position: absolute; right: 400px;top: 1250px;}
+
+.hover-t3:hover+.hover-i3 {
+    display: block;}
+
+.hover-i4 {width: 400px;
+    display: none; position: absolute; right: 300px;top: 1250px;}
+
+.hover-t4:hover+.hover-i4 {
+    display: block;}
+
+    .video-container{margin: auto;padding-top: 50px;}
+
+    .box-2-h1{margin-bottom: 50px;font-family: 'ONE-Mobile-Title'; font-size: 2rem;background: #FFC9E9;color: blue;border-radius: 10px;margin-top: 100px;}
+    
+    .page-3{margin: auto; width: 200px;height: 50px;line-height: 50px;
+    	color: pink;font-size: 0.7rem;margin-top: 100px;background: blue;border-radius: 100%}
+
+.hammerbox{position: sticky;}
+
+</style>
+
+
+
+
+</head>
+
+
+
+<body>
+
+<section class="bg">
+
+<div class="bg-box">
+	<div class="img-heart" data-aos="flip-right" data-aos-easing="ease-out-cubic ">
+	<img src="broken-heart.png">
+</div>
+
+	<div class="img-heart-2"data-aos="flip-right"data-aos-offset="300" data-aos-easing="ease-out-cubic">
+	<img src="broken-heart.png">
+</div>
+
+<div class="text-box">
+
+<div class="bg-box-text1" data-aos="flip-right"  >
+	<h1 class="date-01" >데이트폭력 </h1>
+	<h1 class="date-02">3년새 223% 폭증 </h1>
+
+</div>
+
+<div class="bg-blue">
+
+	<div class="particle"  >
+
+	<img src="particle.png">
+
+</div>
+
+<div class="blue-box">
+
+<div class="news">
+   <div class="video">
+
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/KPjm471GmHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+	<div class="news-h2box" >
+
+     <div class="h2-box-01" >
+		<h2>데이트폭력(교제폭력) 신고 건수와 입건 건수가 증가세를 보이는 가운데, 지난해 데이트폭력으로 입건된 10대 피의자가 2021년 대비 60.1% 늘어난 것으로 나타났다.
+경찰대 치안정책연구소가 12월29일 발간한 ‘치안전망 2023’ 보고서를 보면, 데이트폭력 신고 건수는 지난해 9월 기준 5만2767건으로 전년 동기(4만1335명) 대비 27.7% 늘어난 것으로 집계됐다. 데이트폭력 피의자 역시 지난해 9월 기준 9869명으로 2021년 9월(7574명)에 견줘 30.3% 증가했다. 연구소는 “이러한 경향성이 유지된다면 2023년에도 데이트폭력의 신고 및 입건 건수가 증가할 것으로 예측된다”고 내다봤다.</h2></div>
+
+<div class="h2-box-02" >
+<h2>
+이번 보고서에서 특히 눈길을 끄는 대목은 데이트폭력 피의자 가운데 10대 수가 크게 늘었다는 점이다. 지난해(9월 기준) 피의자 현황을 연령별로 보면 20대가 36.8%(3631명)로 가장 많았고, 30대(25.6%·2526명)와 40대(17.9%·1768명)가 뒤를 이었다. 50대와 60대는 각각 12.2%(1207명), 4.1%(404명)였다. 10대 피의자는 333명(3.4%)으로 가장 적었으나, 전년 동기 대비 60.1% 늘어 가장 큰 폭의 증가세를 보였다.</h2></div>
+
+
+</div>
+</div>
+
+	</div>
+
+</div>
+
+	<div class="pink-box">
+		
+		<h1 class="date">데이트 폭력이란?</h1>
+		<h1 class="date-1">(마우스를 올려보세요)</h1>
+
+<div class="hhover">
+
+
+		<div class="hoverbox1">
+		<div class="hover-t1">통제</div>
+			<img class="hover-i1" src="qqq.png">
+		</div>
+
+		<div class="hoverbox1">
+		<div class="hover-t2">언어적 · 정서적 · 경제적</div>
+			<img class="hover-i2" src="www.png">
+		</div>
+	
+<div class="hoverbox1">
+		<div class="hover-t3">신체적</div>
+			<img class="hover-i3" src="eee.png">
+		</div>
+
+
+<div class="hoverbox1">
+		<div class="hover-t4">성적</div>
+			<img class="hover-i4" src="rrr.png">
+	</div>
+
+</div>
+
+</div>
+
+<div class="text-last" >
+<h2>친밀한 관계에서 일어난 모든 폭력을 말하며,
+데이트 관계가 종결된 이후에도 지속되는 심리적 손상까지를 
+포함합니다.<h2>
+</div>
+
+</div>
+
+
+<div class="hammerbox" div data-aos="zoom-in-down">
+             <img src="hammer.png"></div>
+
+
+<div class="box-2" data-aos="fade-down"         	 data-aos-offset="100" 
+             data-aos-easing="ease-out-cubic"
+             >
+
+
+<h1 class="box-2-h1">데이트 폭력과 관련한 처벌법</h1>
+
+
+
+
+<div  class="law-1" >
+
+
+<div class="law-1-1">
+<h2 class="law-h2">상해죄</h2> 형법 제257조 사람의 신체를 상해한 자는 7년 이하의 징역,10년 이하의 자격정지 또는 1천만원 이하의 벌금에 처한다.</div>
+
+<div class="law-1-1">
+<h2 class="law-h2">폭행죄</h2>형법 제260조 사람의 신체에 대하여 폭행을 가한 자는 
+                   2년 이하의 징역 500만원 이하의 벌금, 구류 또는 과료에 처한다.</div>
+
+<div class="law-1-1">
+<h2 class="law-h2">협박죄</h2>사람을 협박하였을 때에는 단순협박죄가 되어 3년 이하의 징역, 
+                   또는 500만 원 이하의 벌금, 구류 또는 과료에 처한다(283조 1항). 공소시효는 5년이다.</div>
+ 
+ </div>
+
+
+ 
+ <div  class="law-2" >
+
+
+ <div class="law-1-1" >                  
+<h2 class="law-h2">감금죄</h2>사람의 장소 이전의 자유를 침해하는 범죄이며 형벌은 
+5년 이하의 징역 또는 700만 원 이하의 벌금에 처한다.</div>
+
+
+
+
+<div class="law-1-1">   
+<h2 class="law-h2">성추행</h2>강제추행을 뜻하며 강제추행이 성희롱과 다른 것은 '폭행이나 협박'을 수단으로 '추행'하는 것이다.형법 제298조에 따라 강제추행한 자는 10년이하의 징역 또는 1500만원 이하의 벌금에 처한다.</div>
+
+ <div class="law-1-1">                       
+<h2 class="law-h2">성폭행 </h2>강간과 강간미수를 의미한다. 강간은 '폭행 또는 협박을 가해 부녀와 교접행위를 하는 것'을 말한다.형법 제297조에 따라 강간한 자는 3년이상의 유기징역에 처한다.</div>
+
+</div>
+
+<a href="index3.html">
+<div class="page-3">
+   
+<h2>더 알아보기</h2>
+
+	</div>
+</a>
+</div>
+
+
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+	<script>
+    AOS.init();
+	</script>
+
+
+
+</body>
+</html>
